@@ -1,0 +1,149 @@
+
+/* Home Section with Background Image */
+.home-section {
+  z-index: -1;
+  background-image: var(--image-gradient), url(../../Assets/home-bg.png); /* Gradient and background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+}
+
+/* Container for Content in Home Section */
+.home-container {
+  width: 80%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  color: white;
+}
+
+/* Main Heading Style */
+.heading {
+  font-size: 7em;
+  padding-left: 50px;
+}
+
+/* Sub-Heading Name Style */
+.heading-name {
+  font-size: 5em;
+  padding-left: 45px;
+}
+
+/* Main Name Highlight */
+.main-name {
+  color: #53e610; /* Green color for emphasis */
+}
+
+/* Paragraph Text Style */
+.home-container p {
+  font-size: 1.5rem;
+  padding-left: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+}
+
+/* Style for Computer Image Section */
+.computer {
+  display: flex;
+  margin-left: 20%;
+}
+
+/* Computer Image Sizing */
+.computer-img {
+  width: 15rem;
+  height: 15rem;
+}
+
+/* Typewriter Effect Text Style */
+.Typewriter__wrapper {
+  font-size: 5rem;
+  color: #53e610; /* Same green color for consistency */
+  font-weight: 600;
+  margin-left: 5rem;
+}
+
+/* Cursor Style for Typewriter Effect */
+.Typewriter__cursor {
+  font-size: 6rem;
+  color: #0c0c0c;
+}
+
+
+.mobile-image{
+  display: none;
+}
+/* Responsive Design for Smaller Screens */
+@media (max-width: 767px) {
+  /* Smaller Typewriter Text Size and Position Adjustment */
+  .home-section {
+    background-image: none;
+    padding-top: 7rem;
+    justify-content: center;
+    text-align: center;
+
+  }
+  .mobile-image{
+    display: block;
+  }
+  .back-img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+  }
+
+  
+  .Typewriter__wrapper {
+      font-size: 1.4em;
+      font-weight: 500;
+      position: absolute;
+      
+
+  }
+
+  /* Hide Cursor on Small Screens */
+  .Typewriter__cursor {
+      display: none;
+  }
+
+  /* Adjust Main Heading on Smaller Screens */
+  .heading {
+      font-size: 2.5em;
+      padding-left: 20px;
+  }
+
+  /* Adjust Sub-Heading Name on Smaller Screens */
+  .heading-name {
+      font-size: 2em;
+      padding-left: 20px;
+  }
+
+  /* Adjust Paragraph Text on Smaller Screens */
+  .home-container p {
+      font-size: 1rem;
+      padding-left: 20px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin-top: 3rem;
+  }
+
+  /* Adjust Computer Image Size on Smaller Screens */
+  .computer-img {
+      width: 10rem;
+      height: 10rem;
+      margin-left: 50%;
+  }
+
+  /* Adjust Home Container Width on Smaller Screens */
+  .home-container {
+      width: 90%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+  }
+}

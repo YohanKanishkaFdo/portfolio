@@ -1,0 +1,150 @@
+/* About Section Styles */
+.about-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-color: var(--section-background-color) !important;
+  color: white !important;
+  text-align: center;
+}
+
+/* Styling for Toolstack Row */
+.toolstack-row {
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+/* Styling for icons */
+.tech-icons,
+.tool-icons-card {
+  font-size: 4.5em !important;
+  margin: 15px !important;
+  padding: 10px !important;
+  opacity: 0.93 !important;
+  border: 1.7px solid rgba(10, 235, 59, 0.637) !important;
+  vertical-align: middle !important;
+  text-align: center !important;
+  border-radius: 5px !important;
+  display: inline-block !important;
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  overflow: hidden !important;
+  transition: all 0.4s ease 0s !important;
+}
+
+.Professional-skill-icon,
+.tool-icon {
+  width: 10rem;
+  height: 10rem;
+  margin: 10px;
+  display: block;
+}
+
+.tool-icons-card:hover .tool-icon {
+  display: none;
+}
+
+.iconp {
+  margin-top: 10px;
+  color: white;
+  font-size: 3rem;
+}
+
+.tech-icons:hover,
+.tool-icons-card:hover {
+  transform: scale(1.05) !important;
+  overflow: hidden !important;
+  border: 2.2px solid rgb(21, 248, 0) !important;
+  box-shadow: 0 4px 3px rgba(62, 255, 3, 0.281) !important;
+}
+
+.tech-icon-images {
+  padding: 20px !important;
+  line-height: 1.6 !important;
+}
+
+/* Footer styling */
+.blockquote-footer {
+  color: #356e1b;
+}
+
+/* Row and Column Styles */
+.about-row {
+  justify-content: center;
+  padding: 10px;
+}
+
+.about-col {
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.about-col-img {
+  padding-top: 120px;
+  padding-bottom: 50px;
+}
+
+.project-heading {
+  font-size: 2.1em;
+  padding-bottom: 20px;
+}
+
+.tab-content {
+  padding-bottom: 50px;
+}
+
+/* Responsive Design - Media Queries */
+
+/* Mobile Screens */
+@media (max-width: 767px) {
+
+  .tech-icons{
+    margin: 10px !important;
+  }
+  .about-row{
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .about-row h1{
+    font-size: 1.5rem;
+  }
+  .about-row p{
+    font-size: 1rem;
+  }
+
+  .techstack-row{
+    justify-content: center;
+  }
+  .techstack-row p{
+    font-size: 1rem;
+  }
+
+  .tool-icons-card {
+    font-size: 3.5em !important;
+    margin: 10px !important;
+  }
+
+  .Professional-skill-icon,
+  .tool-icon {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .iconp {
+    font-size: 2rem;
+  }
+
+  .about-section {
+    padding-top: 100px !important;
+  }
+
+  .about-col-img {
+    padding-top: 80px;
+    padding-bottom: 20px;
+  }
+
+  .project-heading {
+    font-size: 1.8em;
+    padding-bottom: 10px;
+  }
+}

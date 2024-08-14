@@ -1,0 +1,281 @@
+/* --------- */
+/* Projects Section */
+/* --------- */
+
+.project {
+  background-color: transparent;
+  margin-top: 10rem;
+}
+
+.project-heading, .project h1 {
+  font-size: 2.3em !important;
+  font-weight: 500 !important;
+  padding-top: 10px !important;
+  color: #53e610; /* Project heading color */
+}
+
+.contand h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin-left: 20rem;
+  color: white;
+}
+
+.quote-card-view {
+  border: none !important;
+  color: white !important;
+  background-color: transparent !important;
+}
+
+.quote-card-view p {
+  font-size: 2rem;
+}
+
+.about-activity {
+  list-style: none !important;
+  text-align: left !important;
+  padding-left: 1px !important;
+  font-size: 1.5rem;
+}
+
+/* Featurette Section */
+.featurette {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 0.1rem solid #53e610;
+  border-radius: 10px;
+  width: 80%;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: transparent;
+}
+
+.body-1 {
+  flex: 0 0 60px;
+}
+
+.body-2 {
+  flex-grow: 1;
+  padding: 0 1rem;
+}
+
+.body-2 h2 {
+  font-size: 2rem;
+  margin: 0;
+  color: #fffcfc;
+  line-height: 1.6;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.body-2 span {
+  font-weight: normal;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.lead {
+  font-size: 1rem;
+  color: #fffafa;
+  margin: 5px 0;
+}
+
+.tab-content-experiance {
+  margin-top: 5rem;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.img-fluid-education {
+  width: 20rem;
+  height: 18rem;
+  padding-top: 3rem;
+}
+
+.like-item {
+  padding-top: 10px !important;
+  font-size: 1.1em !important;
+  font-family: sans-serif !important;
+}
+
+.like-btn {
+  background-color: #934cce5e !important;
+  border-color: #934cce5e !important;
+  padding: 0.25rem 0.98rem !important;
+  border-radius: 5px !important;
+  line-height: 1.4 !important;
+  transition: 0.3s ease !important;
+}
+
+.like-btn:hover {
+  transform: translateY(-2px) !important;
+  background-color: #a24dd386 !important;
+  border-color: #a24dd386 !important;
+}
+
+.animate-like {
+  animation-name: likeAnimation;
+  animation-fill-mode: forwards;
+  animation-duration: 0.85s;
+}
+
+@keyframes likeAnimation {
+  0% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.project-sosial {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 5rem;
+}
+
+.p-card {
+  font-size: 1rem !important;
+  margin: 15px !important;
+  padding: 10px !important;
+  opacity: 0.93 !important;
+  border: 1.7px solid rgba(10, 235, 59, 0.637) !important;
+  vertical-align: middle !important;
+  text-align: center !important;
+  border-radius: 5px !important;
+  display: table !important;
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  overflow: hidden !important;
+  transition: all 0.4s ease 0s !important;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.project-photo {
+  width: 50rem;
+  height: 100%;
+  padding: 1rem;
+}
+
+.arrow-icon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 5rem;
+  background-color: #04f118;
+}
+
+.slideStyles {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.rightArrowStyles, .leftArrowStyles {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 45px;
+  color: #fff;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.rightArrowStyles {
+  right: 0px;
+}
+
+.leftArrowStyles {
+  left: 0px;
+}
+
+.sliderStyles {
+  position: relative;
+  height: 100%;
+}
+
+
+.dotsContainerStyles {
+  display: flex;
+  justify-content: center;
+}
+
+.dotStyle {
+  margin: 0 3px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #53e610;
+}
+
+.topic {
+  margin-top: 5rem;
+}
+
+.img-downolad {
+  width: 5rem;
+  height: 5rem;
+}
+
+/* Responsive Adjustments */
+
+
+/* Mobile Screens */
+@media (max-width: 767px) {
+
+  .project-sosial {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 2rem;
+  }
+
+  .web-project {
+    flex-direction: column;
+  }
+
+  .contand h1 {
+    margin-left: 0;
+    font-size: 2rem;
+  }
+
+  .featurette {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .project-photo {
+    width: 30rem;
+    padding: 0;
+  }
+
+  .project-card {
+    flex-direction: column;
+  }
+
+  .p-card {
+    width: 80%;
+  }
+
+  .img-fluid-education {
+    width: 18rem;
+    height: 16rem;
+  }
+  .slider{
+    width: 100%;
+    margin: 1rem;
+    
+  }
+
+}
